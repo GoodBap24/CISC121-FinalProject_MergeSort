@@ -3,17 +3,20 @@ import time
 
 # --- STEP 1: PREPARING THE DATA ---
 def parse_input(text):
-    """Turns your text into a list and ignores invalid scores."""
+    """Turns your text into a list, ignoring invalid scores and non-alpha names."""
     students = []
     lines = text.strip().split('\n')
     for line in lines:
         if "," in line:
             try:
-                name, score_str = line.split(",")
+                name_part, score_str = line.split(",")
+                name = name_part.strip()
                 score = float(score_str.strip())
-                # Only keep scores in the valid 0-100 range
-                if 0 <= score <= 100:
-                    students.append({"name": name.strip(), "score": score})
+                
+                # NEW: Check if name is letters-only AND score is 0-100
+                # (Note: name.replace(" ", "") allows for names with spaces like 'Tay Moore')
+                if name.replace(" ", "").isalpha() and 0 <= score <= 100:
+                    students.append({"name": name, "score": score})
             except ValueError:
                 continue
     return students
