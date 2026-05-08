@@ -34,6 +34,28 @@ AI Disclosure: Full level 4 ai used (Gemini) to generate solutions, rough drafts
 # Live Demo
 You can test out the live Scholarship Merit Sorter here: https://huggingface.co/spaces/taycodes/merit-master-sort 
 
+## Steps to Run (Local)
+
+To run this project on your own machine, follow these steps:
+
+1. **Clone the Repository:**
+   Open your terminal/command prompt and run:
+   `git clone https://github.com/taycodes/CISC121-FinalProject_MergeSort.git`
+
+2. **Navigate to the Directory:**
+   `cd CISC121-FinalProject_MergeSort`
+
+3. **Install Dependencies:**
+   Ensure you have Python installed, then run:
+   `pip install -r requirements.txt`
+
+4. **Launch the App:**
+   Run the following command:
+   `python app.py`
+
+5. **Access the Interface:**
+   Once the script is running, copy the local URL (usually `http://127.0.0.1:7860`) and paste it into your web browser.
+
 # Testing
 Demonstration of code/interface
 <img width="633" height="667" alt="image" src="https://github.com/user-attachments/assets/cc8f88fb-ef4e-4d76-862d-2837b4470aef" />
@@ -50,7 +72,3 @@ This was fixed by adding a filter that checks to make sure the score is from 0-1
 
 3. Not an edge case but forgot to add the highlight that shows the user which specific 2 students are being compared at a given time so I did.
    <img width="1273" height="661" alt="image" src="https://github.com/user-attachments/assets/696856c4-6a47-4568-b725-f1ea112b1390" />
-
-
-   
-
