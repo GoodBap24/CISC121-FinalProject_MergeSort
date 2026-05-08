@@ -43,6 +43,7 @@ This was fixed by adding a filter that checks to make sure the score is from 0-1
 
 2. Another edge case found was that numbers can be inputted in the place of letters for applicants names
    <img width="627" height="667" alt="image" src="https://github.com/user-attachments/assets/c5b9689d-b45f-4941-aca1-55da4ad26802" />
+   Was fixed using .isalpha() function to check the characters within an inputted name to verify if they are english letters. If not they get skipped
 
    
 
