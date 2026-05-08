@@ -3,17 +3,22 @@ import time
 
 # --- STEP 1: PREPARING THE DATA ---
 def parse_input(text):
-    """Turns your text into a list the computer can understand."""
+    """Turns your text into a list and ignores invalid scores."""
     students = []
     lines = text.strip().split('\n')
     for line in lines:
         if "," in line:
-            name, score = line.split(",")
-            # We convert the score to a float (number) so we can compare them
-            students.append({"name": name.strip(), "score": float(score.strip())})
+            try:
+                name, score_str = line.split(",")
+                score = float(score_str.strip())
+                # Only keep scores in the valid 0-100 range
+                if 0 <= score <= 100:
+                    students.append({"name": name.strip(), "score": score})
+            except ValueError:
+                continue
     return students
 
-# --- STEP 2: THE MERGE SORT (YOUR FLOWCHART LOGIC) ---
+# --- STEP 2: THE MERGE SORT (FLOWCHART LOGIC) ---
 def merge_sort_sim(arr):
     """
     This is the Merge Sort from your flowchart.
