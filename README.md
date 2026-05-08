@@ -39,5 +39,10 @@ Problems/Edge Cases:
 
 1. Upon testing I noticed that the first edge case that couldnt be handled was when an invalid score was inputted into the simulation (e.g 101, -5, etc.)
    <img width="629" height="662" alt="image" src="https://github.com/user-attachments/assets/134c46c7-9e9a-4432-9c56-86d0246580f0" />
+This was fixed by adding a filter that checks to make sure the score is from 0-100 and skips anything that falls outside said range
+
+2. Another edge case found was that numbers can be inputted in the place of letters for applicants names
+   <img width="627" height="667" alt="image" src="https://github.com/user-attachments/assets/c5b9689d-b45f-4941-aca1-55da4ad26802" />
+
    
 
