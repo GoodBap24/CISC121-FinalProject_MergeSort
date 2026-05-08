@@ -45,5 +45,9 @@ This was fixed by adding a filter that checks to make sure the score is from 0-1
    <img width="627" height="667" alt="image" src="https://github.com/user-attachments/assets/c5b9689d-b45f-4941-aca1-55da4ad26802" />
    Was fixed using .isalpha() function to check the characters within an inputted name to verify if they are english letters. If not they get skipped
 
+3. Not an edge case but forgot to add the highlight that shows the user which specific 2 students are being compared at a given time so I did.
+   <img width="1273" height="661" alt="image" src="https://github.com/user-attachments/assets/696856c4-6a47-4568-b725-f1ea112b1390" />
+
+
    
 
