@@ -31,6 +31,9 @@ Simulation - the yellow highlight should show 2 specific students being compared
 
 AI Disclosure: Full level 4 ai used (Gemini) to generate solutions, rough drafts, and overall code. Used with minimal modicfication and assisted with various issues.
 
+# Live Demo
+You can test out the live Scholarship Merit Sorter here: https://huggingface.co/spaces/taycodes/merit-master-sort 
+
 # Testing
 Demonstration of code/interface
 <img width="633" height="667" alt="image" src="https://github.com/user-attachments/assets/cc8f88fb-ef4e-4d76-862d-2837b4470aef" />
